@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "615398169882",
+    "project_id": "studentbook-e2ad9",
+    "storage_bucket": "studentbook-e2ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615398169882:android:c870c7351328f2f1a0a0a3",
+        "android_client_info": {
+          "package_name": "com.eafmicroservice.student_books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615398169882-egf02d6nt9e6e85otjml91hsfj597nvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrU3_xk7qcMPtX8uH-Tc2TpoJ8SwqL0vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615398169882-egf02d6nt9e6e85otjml91hsfj597nvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
