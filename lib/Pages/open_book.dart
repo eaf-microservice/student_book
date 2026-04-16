@@ -8,26 +8,19 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:student_books/model/ad_helper.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-import 'package:wakelock/wakelock.dart';
 
 //=============================
-late PdfTextSearchResult _searchResult;
 late PdfViewerController _pdfViewerController;
 
 class Book extends StatefulWidget {
-  String NamePage;
-  String IdBookInDrive;
-  Book(this.NamePage, this.IdBookInDrive, {super.key});
+  final String namePage;
+  final String idBookInDrive;
+  const Book(this.namePage, this.idBookInDrive, {super.key});
   @override
-  BookState createState() => BookState(NamePage, IdBookInDrive);
+  BookState createState() => BookState();
 }
 
 class BookState extends State<Book> {
-  BookState(this.NamePage, this.IdBookInDrive);
-  //================================variables===================================
-  String NamePage;
-  String IdBookInDrive;
-
   final AdWidget adWidget = AdWidget(ad: AdOpenBook.myBanner);
   final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
   bool isoffline = false;
@@ -59,17 +52,13 @@ class BookState extends State<Book> {
   void initState() {
     super.initState();
     _pdfViewerController = PdfViewerController();
-    _searchResult = PdfTextSearchResult();
-    Wakelock.enable();
-    (PdfPageChangedDetails details) =>
-        _pdfViewerController.jumpToPage(details.newPageNumber);
+
     conx();
     AdOpenBook.myBanner.load();
   }
 
   @override
   void dispose() {
-    Wakelock.disable();
     connection!.cancel;
     super.dispose();
   }
@@ -104,7 +93,7 @@ class BookState extends State<Book> {
         appBar: AppBar(
             centerTitle: true,
             title: Text(
-              NamePage,
+              widget.namePage,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
             )),
         //actions: SearchWord('ذكر')),
@@ -114,7 +103,7 @@ class BookState extends State<Book> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: MyBook(
-                'https://drive.google.com/uc?export=view&id=$IdBookInDrive',
+                'https://drive.google.com/uc?export=view&id=${widget.idBookInDrive}',
                 _pdfViewerController),
           ),
         ));

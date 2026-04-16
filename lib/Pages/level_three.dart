@@ -5,11 +5,10 @@ import 'package:student_books/Pages/matiere.dart';
 
 //====================S5
 class LevelThreeS1 extends StatelessWidget {
-  const LevelThreeS1({Key? key}) : super(key: key);
+  const LevelThreeS1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.teal[100],
         appBar: AppBar(
@@ -54,10 +53,9 @@ class LevelThreeS1 extends StatelessWidget {
 //==================S6
 
 class LevelThreeS2 extends StatelessWidget {
-  const LevelThreeS2({Key? key}) : super(key: key);
+  const LevelThreeS2({super.key});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.teal[100],
         appBar: AppBar(
@@ -89,9 +87,11 @@ class LevelThreeS2 extends StatelessWidget {
               Matiere('مصطلح الحديث', '1ra59sdmKQDCZFqTuAst_dt4X9WI0kB-1'),
               //Matiere('القواعد الفقهية','XXXXX'),
               Matiere('الفرق والمذاهب', '1wosyCO67WKr-mAgEBmcvIMY_nTu4f4dp'),
-              Matiere('تاريخ الخلافة الراشدة', '1kkdTTthfGGQuJBnqL76ewZLiOf1-4jQx'),
+              Matiere(
+                  'تاريخ الخلافة الراشدة', '1kkdTTthfGGQuJBnqL76ewZLiOf1-4jQx'),
               Matiere('الإعراب التطبيقي', '189NfrEbG4Km6motflXGwHGMSvUgVnrYy'),
-              Matiere('ضوابط الكتابة الصحيحة', '1I55bI00ANDoGLKWRIBIAVZx4y9sTwrc_'),
+              Matiere(
+                  'ضوابط الكتابة الصحيحة', '1I55bI00ANDoGLKWRIBIAVZx4y9sTwrc_'),
             ],
           ),
         )));

@@ -7,13 +7,13 @@ import 'package:url_launcher/url_launcher.dart';
 //======================Tafrigh========================
 
 class Matiere extends StatelessWidget {
-  Matiere(this.NomMatiere, this.PageLivre, {super.key});
-  String NomMatiere;
-  String PageLivre; // Actually contains the Google Drive ID or a direct URL
+  const Matiere(this.nomMatiere, this.pageLivre, {super.key});
+  final String nomMatiere;
+  final String pageLivre;
 
   Future<void> _handleNavigation(BuildContext context) async {
-    if (PageLivre.startsWith('http')) {
-      final uri = Uri.parse(PageLivre);
+    if (pageLivre.startsWith('http')) {
+      final uri = Uri.parse(pageLivre);
       if (await canLaunchUrl(uri)) {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
       }
@@ -21,7 +21,7 @@ class Matiere extends StatelessWidget {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Book(NomMatiere, PageLivre),
+          builder: (context) => Book(nomMatiere, pageLivre),
         ),
       );
     }
@@ -50,7 +50,7 @@ class Matiere extends StatelessWidget {
                       minWidth: 130.0,
                       onPressed: () => _handleNavigation(context),
                       child: Text(
-                        NomMatiere,
+                        nomMatiere,
                         style: TextStyle(
                             fontSize: 20.0, fontWeight: FontWeight.bold),
                       ),
@@ -65,15 +65,14 @@ class Matiere extends StatelessWidget {
 
 //==================Books===========================
 class Livre extends StatelessWidget {
-  Livre(this.NomMatiere, this.NomPageLivre, this.LienCouvre, {Key? key})
-      : super(key: key);
-  String NomMatiere;
-  String NomPageLivre; // Actually contains the Google Drive ID or a direct URL
-  String LienCouvre;
+  const Livre(this.nomMatiere, this.nomPageLivre, this.lienCouvre, {super.key});
+  final String nomMatiere;
+  final String nomPageLivre;
+  final String lienCouvre;
 
   Future<void> _handleNavigation(BuildContext context) async {
-    if (NomPageLivre.startsWith('http')) {
-      final uri = Uri.parse(NomPageLivre);
+    if (nomPageLivre.startsWith('http')) {
+      final uri = Uri.parse(nomPageLivre);
       if (await canLaunchUrl(uri)) {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
       }
@@ -81,7 +80,7 @@ class Livre extends StatelessWidget {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Book(NomMatiere, NomPageLivre),
+          builder: (context) => Book(nomMatiere, nomPageLivre),
         ),
       );
     }
@@ -102,7 +101,7 @@ class Livre extends StatelessWidget {
                     height: 150.0,
                     width: 100.0,
                     child: Image.asset(
-                      'assets/$LienCouvre',
+                      'assets/$lienCouvre',
                       fit: BoxFit.fill,
                     ),
                   )),
@@ -112,7 +111,7 @@ class Livre extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: Text(
-                  NomMatiere,
+                  nomMatiere,
                   style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
               )

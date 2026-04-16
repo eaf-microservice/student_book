@@ -5,11 +5,10 @@ import 'package:student_books/Pages/matiere.dart';
 
 //=============S7
 class LevelFourS1 extends StatelessWidget {
-  const LevelFourS1({Key? key}) : super(key: key);
+  const LevelFourS1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.teal[100],
         appBar: AppBar(
@@ -30,20 +29,19 @@ class LevelFourS1 extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 10.0),
             crossAxisCount: 2,
             children: [
-              Matiere('رابط الجوجل درايف', 'https://drive.google.com/drive/folders/1nGnKs94v-1vfKv5Qal-TkQPbW5B4wDfv'),
+              Matiere('رابط الجوجل درايف',
+                  'https://drive.google.com/drive/folders/1nGnKs94v-1vfKv5Qal-TkQPbW5B4wDfv'),
             ],
           ),
-        )
-        );
+        ));
   }
 }
 
 //=======================S8
 class LevelFourS2 extends StatelessWidget {
-  const LevelFourS2({Key? key}) : super(key: key);
+  const LevelFourS2({super.key});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.teal[100],
         appBar: AppBar(
@@ -64,10 +62,10 @@ class LevelFourS2 extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 10.0),
             crossAxisCount: 2,
             children: [
-              Matiere('رابط الجوجل درايف', 'https://drive.google.com/drive/folders/1nGnKs94v-1vfKv5Qal-TkQPbW5B4wDfv'),
+              Matiere('رابط الجوجل درايف',
+                  'https://drive.google.com/drive/folders/1nGnKs94v-1vfKv5Qal-TkQPbW5B4wDfv'),
             ],
           ),
-        )
-        );
+        ));
   }
 }

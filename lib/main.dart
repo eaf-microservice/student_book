@@ -3,13 +3,12 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:student_books/Pages/affichage_livres.dart';
 import 'package:student_books/Pages/emplois_des_temps.dart';
-import 'package:student_books/Pages/homePage.dart';
+import 'package:student_books/Pages/home_page.dart';
 import 'package:student_books/Pages/hors_connexion.dart';
 import 'package:student_books/Pages/level_four.dart';
 import 'package:student_books/Pages/level_one.dart';
 import 'package:student_books/Pages/level_three.dart';
 import 'package:student_books/Pages/level_two.dart';
-
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,8 +34,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         'Home': (context) => const HomePage(),
-        'HorsLine': (context) => HorsConnexion(),
-
+        'HorLine': (context) => const HorsConnexion(),
 
         //-------------------------------Levels---------------------------------
         'Level1S1': (context) => LevelOneS1(),

@@ -12,7 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -62,7 +62,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.teal[100],
       bottomNavigationBar: isoffline == false
@@ -140,8 +139,8 @@ class _HomePageState extends State<HomePage> {
                                                 ),
                                               ]),
                                           onTap: () {
-                                            launch(
-                                                'https://www.paypal.com/paypalme/FouadE0F');
+                                            launchUrl(Uri.parse(
+                                                'https://www.paypal.com/paypalme/FouadE0F'));
                                           },
                                         ),
                                         SizedBox(
@@ -168,8 +167,8 @@ class _HomePageState extends State<HomePage> {
                                                 ),
                                               ]),
                                           onTap: () {
-                                            launch(
-                                                'mailto:developperEAF@gmail.com');
+                                            launchUrl(Uri.parse(
+                                                'mailto:EAF.microservice@gmail.com'));
                                           },
                                         ),
                                       ],
@@ -261,7 +260,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.blue),
                       recognizer: new TapGestureRecognizer()
                         ..onTap = () {
-                          launch('https://t.me/fosaas2');
+                          launchUrl(Uri.parse('https://t.me/fosaas2'));
                         },
                     ),
                   ],

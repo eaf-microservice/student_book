@@ -1,0 +1,19 @@
+allprojects {
+    beforeEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                if (!namespace) {
+                    def manifestFile = project.file('src/main/AndroidManifest.xml')
+                    if (manifestFile.exists()) {
+                        try {
+                            def manifest = new XmlParser().parse(manifestFile)
+                            namespace = manifest.@'package'
+                        } catch (e) {
+                            println("Warning: Could not parse AndroidManifest.xml in ${project.name}")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

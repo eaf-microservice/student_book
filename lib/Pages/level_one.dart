@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:student_books/Pages/matiere.dart';
 
 class LevelOneS1 extends StatelessWidget {
-  const LevelOneS1({Key? key}) : super(key: key);
+  const LevelOneS1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.teal[100],
         appBar: AppBar(
@@ -45,10 +44,9 @@ class LevelOneS1 extends StatelessWidget {
 }
 
 class LevelOneS2 extends StatelessWidget {
-  const LevelOneS2({Key? key}) : super(key: key);
+  const LevelOneS2({super.key});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.teal[100],
       appBar: AppBar(
