@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-        splash: 'assets/images/EAFLogo.jpg',
+        splash: 'assets/images/logo.png',
         splashIconSize: 400,
         duration: 1500,
         backgroundColor: Colors.white,

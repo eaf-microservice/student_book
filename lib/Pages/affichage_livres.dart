@@ -271,8 +271,6 @@ class BooksA3 extends StatelessWidget {
                   ' اللغة العربية 2 \n كتاب ضوابط الكتابة الصحيحة',
                   '1xNpfXHo7hGa5ZZLCbmprTLHP5dQAyQPj',
                   'couvreBooks/Annee3/dawabit_kitaba.png'),
-              /* Padding(padding: EdgeInsets.only(top: 10.0)),
-              Livre('التاريخ \n كتاب الخلافة الراشدة وتاريخ بني أمية دراسة منهجية','','couvreBooks/Annee3/XXXX.png'), */
             ],
           ),
         ) //
@@ -304,10 +302,29 @@ class BooksA4 extends StatelessWidget {
           child: ListView(
             padding: EdgeInsets.all(20.0),
             children: [
+              Livre('مهارات البحث العلمي', '1coHeLKwOUVaUwt4sR-dRmy0LbpTSj87t',
+                  'couvreBooks/Annee4/ba7t_3ilmi.png'),
+              Padding(padding: EdgeInsets.only(top: 10.0)),
               Livre(
-                  'رابط الجوجل درايف \n كتب الفرقة الرابعة',
-                  'https://drive.google.com/drive/folders/1nGnKs94v-1vfKv5Qal-TkQPbW5B4wDfv',
-                  'images/titre.jpg'),
+                  'منهجية إثبات صحة الإسلام',
+                  '1uE_OZm07ZkqjbtXcTmtHVw3_V-P7p2Uj',
+                  'couvreBooks/Annee4/manhajiya.png'),
+              Padding(padding: EdgeInsets.only(top: 10.0)),
+              Livre('قضايا فقهية معاصرة', '1hs2kNlj0kVMJ_iQqVm47FqlynIOn0Mw5',
+                  'couvreBooks/Annee4/qadaya_mo3asira.png'),
+              Padding(padding: EdgeInsets.only(top: 10.0)),
+              Livre(
+                  'فتح الرب الحميد في_شرح كتاب التوحيد',
+                  '1jk45nTA4SkFakGjKxgsRqILM64SPruIa',
+                  'couvreBooks/Annee4/tawhid.png'),
+              Padding(padding: EdgeInsets.only(top: 10.0)),
+              Livre(
+                  'تاريخ الدولة العباسية ',
+                  '1aoapUSHe5h46OHcoNVzCXTjwYgBlNGkT',
+                  'couvreBooks/Annee4/tarikh.png'),
+              Padding(padding: EdgeInsets.only(top: 10.0)),
+              Livre('المحرر في الحديث', '1KkSbAJGF7hWufEnz0EBvV9WgKl_fT7OZ',
+                  'couvreBooks/Annee4/hadith.png'),
             ],
           ),
         ) //

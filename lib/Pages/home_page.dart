@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:student_books/Pages/hors_connexion.dart';
 import 'package:student_books/model/ad_helper.dart';
+import 'package:student_books/widgets/about.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
@@ -83,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: 100.0,
+                          height: 200.0,
                         ),
                         Level('الفرقة الأولى', 'Time1Years', 'BooksA1',
                             'Level1S1', 'Level1S2'),
@@ -94,89 +95,17 @@ class _HomePageState extends State<HomePage> {
                         Level('الفرقة الرابعة', 'Time4Years', 'BooksA4',
                             'Level4S1', 'Level4S2'),
                         SizedBox(
-                          height: 15.0,
+                          height: 25.0,
                         ),
                         MaterialButton(
                           onPressed: () {
-                            showDialog(
-                                context: context,
-                                builder: (context) => AlertDialog(
-                                      content: Text(
-                                        'تم تطوير البرنامج من طرف \n'
-                                        ' (Developper EAF)  \n'
-                                        'تم تفريغ الصوتيات من طرف الأخ \n'
-                                        'فهد بن عبد العزيز\n'
-                                        'كل الحقوق محفوظة 2023 ', //Developed by EAF (C) Allright reserved
-                                        style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.red),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      backgroundColor: Colors.greenAccent,
-                                      actionsAlignment:
-                                          MainAxisAlignment.center,
-                                      actions: <Widget>[
-                                        //SizedBox(width: 130.0,child: PayPalButton(donationText : "Support us",paypalButtonId: "3KY5H2BWJ5RBY"),),
-                                        InkWell(
-                                          child: Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Text(
-                                                  'ادعمنا',
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: Colors.red,
-                                                      fontSize: 15),
-                                                ),
-                                                SizedBox(
-                                                  width: 5.0,
-                                                ),
-                                                Icon(
-                                                  Icons.money,
-                                                  color: Colors.red,
-                                                ),
-                                              ]),
-                                          onTap: () {
-                                            launchUrl(Uri.parse(
-                                                'https://www.paypal.com/paypalme/FouadE0F'));
-                                          },
-                                        ),
-                                        SizedBox(
-                                          width: 10.0,
-                                        ),
-                                        InkWell(
-                                          child: Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Text(
-                                                  'تواصل معنا',
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      color: Colors.red,
-                                                      fontSize: 15),
-                                                ),
-                                                SizedBox(
-                                                  width: 5.0,
-                                                ),
-                                                Icon(
-                                                  Icons.email,
-                                                  color: Colors.red,
-                                                ),
-                                              ]),
-                                          onTap: () {
-                                            launchUrl(Uri.parse(
-                                                'mailto:EAF.microservice@gmail.com'));
-                                          },
-                                        ),
-                                      ],
-                                    ));
+                            launchUrl(Uri.parse(
+                                'https://www.paypal.com/paypalme/FouadE0F'));
                           },
                           minWidth: 180.0,
                           child: Text(
-                            'حول التطبيق',
+                            'ادعمنا',
+                            textAlign: TextAlign.start,
                             style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
@@ -184,7 +113,34 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         SizedBox(
-                          height: 20.0,
+                          height: 15.0,
+                        ),
+                        MaterialButton(
+                          onPressed: () {
+                            AboutMe(
+                                    applicationName: 'كتاب الطالب',
+                                    version: '1.0.1',
+                                    logo: Image.asset(
+                                      "assets/images/logo.png",
+                                      width: 100.0,
+                                      height: 100.0,
+                                    ),
+                                    description:
+                                        'تطبيق يحتوي على كل ما يحتاجه الطالب في جامعة صفوة من كتب لتعلم')
+                                .showCustomAbout(context);
+                          },
+                          minWidth: 180.0,
+                          child: Text(
+                            'حول التطبيق',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.lightGreenAccent),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15.0,
                         ),
                         MaterialButton(
                           onPressed: () {
