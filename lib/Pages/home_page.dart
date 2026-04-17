@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                           onPressed: () {
                             AboutMe(
                                     applicationName: 'كتاب الطالب',
-                                    version: '1.0.1',
+                                    version: '0.0.1',
                                     logo: Image.asset(
                                       "assets/images/logo.png",
                                       width: 100.0,
