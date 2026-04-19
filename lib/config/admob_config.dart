@@ -3,7 +3,7 @@ import 'dart:io';
 /// AdMob configuration for managing ad unit IDs across the app
 class AdMobConfig {
   // Set to true to use test ads (recommended for development)
-  static const bool useTestAds = false;
+  static const bool useTestAds = true;
 
   // Test Ad Unit IDs (safe to use during development)
   static String get _testBannerAdUnitId => Platform.isAndroid
