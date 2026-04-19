@@ -26,7 +26,7 @@ class HorsConnexion extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(Icons.portable_wifi_off, size: 100.0),
+              Icon(Icons.portable_wifi_off, size: 150.0),
               Text(
                 'المرجو التأكد من اتصالك بالأنترنت\n والمحاولة مجددا',
                 style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
@@ -36,7 +36,7 @@ class HorsConnexion extends StatelessWidget {
                 height: 100.0,
               ),
               Image.asset(
-                'assets/images/EAF_off.png',
+                'assets/icon/icon.png',
                 width: 80.0,
                 height: 80.0,
               ),

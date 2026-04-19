@@ -1,9 +1,7 @@
 name: student_books
 description: تطبيق يحتوي على كل ما يحتاجه الطالب في جامعة صفوة من كتب لتعلم
-
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
-version: 0.0.1+1
-
+version: 0.0.2+2
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
@@ -16,9 +14,8 @@ dependencies:
   animated_splash_screen: ^1.3.0
   syncfusion_flutter_pdfviewer: ^27.1.0
   url_launcher: ^6.1.10
-
   flutter_donation_buttons: ^0.1.6
-  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_icons: ^0.14.4
   connectivity_plus: any
   device_info_plus: any
   google_mobile_ads: any
@@ -27,14 +24,8 @@ dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: false
-  #remove_alpha_ios: true
-  image_path: "assets/images/logo.png"
-  min_sdk_android: 21 # android min sdk min:16, default 21
-  web:
-    generate: true
-    image_path: "assets/images/logo.png"
-    background_color: "#hexcode"
-    theme_color: "#hexcode"
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
 
 dev_dependencies:
   flutter_test:
@@ -44,64 +35,22 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/logo.png
-    - assets/images/image.jpg
-    - assets/images/titre.jpg
-    - assets/images/EAFLogo.jpg
-    - assets/images/EAF_off.png
-    - assets/images/logo_eaf.png
+    - assets/icon/icon.png
+    - assets/data/books.json
+    - assets/images/
+    - assets/eaf/
 
     #=============Emplois des temps=====================
-    - assets/emploi2Temp/Annee1.jpg
-    - assets/emploi2Temp/Annee2.jpg
-    - assets/emploi2Temp/Annee3.jpg
-    - assets/emploi2Temp/Annee4.jpg
+    - assets/emploi2Temp/
 
     #=============Couvres A1=====================
-    - assets/couvreBooks/Annee1/akida.png
-    - assets/couvreBooks/Annee1/arabic.png
-    - assets/couvreBooks/Annee1/fiqh.png
-    - assets/couvreBooks/Annee1/hadith.png
-    - assets/couvreBooks/Annee1/mostala7_7adit.png
-    - assets/couvreBooks/Annee1/osol_fiqh.png
-    - assets/couvreBooks/Annee1/tajwid.png
-    - assets/couvreBooks/Annee1/tarbiya.png
+    - assets/couvreBooks/Annee1/
 
     #=============Couvres A2=====================
-    - assets/couvreBooks/Annee2/akida.png
-    - assets/couvreBooks/Annee2/arabic_balagha.png
-    - assets/couvreBooks/Annee2/arabic_sarf.png
-    - assets/couvreBooks/Annee2/bidaya_mawarit.png
-    - assets/couvreBooks/Annee2/fiqh_chafi3i.png
-    - assets/couvreBooks/Annee2/fiqh_hanafi.png
-    - assets/couvreBooks/Annee2/fiqh_hanbali.png
-    - assets/couvreBooks/Annee2/fiqh_maliki.png
-    - assets/couvreBooks/Annee2/quran_science.png
-    - assets/couvreBooks/Annee2/sira_nabawiya.png
-    - assets/couvreBooks/Annee2/tafsir.png
-    - assets/couvreBooks/Annee2/tarbiya_w_solok.png
-    - assets/couvreBooks/Annee2/tarikh_tachri3.png
+    - assets/couvreBooks/Annee2/
 
     #=============Couvres A3==========================
-    - assets/couvreBooks/Annee3/adyan_madahib.png
-    - assets/couvreBooks/Annee3/akida_ta7awiya.png
-    - assets/couvreBooks/Annee3/akida_wastiya.png
-    - assets/couvreBooks/Annee3/char7_ijma3.png
-    - assets/couvreBooks/Annee3/dawabit_kitaba.png
-    - assets/couvreBooks/Annee3/fiqh_chafi3i.png
-    - assets/couvreBooks/Annee3/fiqh_hanafi.png
-    - assets/couvreBooks/Annee3/fiqh_hanbali.png
-    - assets/couvreBooks/Annee3/i3rab_3ama.png
-    - assets/couvreBooks/Annee3/nozhat_nadar.png
-    - assets/couvreBooks/Annee3/qawa3id_fiqhiya.png
-    - assets/couvreBooks/Annee3/salsabil_chafi.png
-    - assets/couvreBooks/Annee3/tafsir_ayat.png
-    - assets/couvreBooks/Annee3/taysir_wosol_osol.png
+    - assets/couvreBooks/Annee3/
 
     #=============Couvres A4==========================
-    - assets/couvreBooks/Annee4/manhajiya.png
-    - assets/couvreBooks/Annee4/tawhid.png
-    - assets/couvreBooks/Annee4/tarikh.png
-    - assets/couvreBooks/Annee4/hadith.png
-    - assets/couvreBooks/Annee4/ba7t_3ilmi.png
-    - assets/couvreBooks/Annee4/qadaya_mo3asira.png
+    - assets/couvreBooks/Annee4/

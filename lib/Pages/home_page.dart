@@ -1,14 +1,12 @@
 // ignore_for_file: unnecessary_new, prefer_const_constructors, prefer_const_literals_to_create_immutables, non_constant_identifier_names, library_private_types_in_public_api
 
 import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:student_books/Pages/hors_connexion.dart';
 import 'package:student_books/model/ad_helper.dart';
-import 'package:student_books/widgets/about.dart';
+import 'package:student_books/widgets/app_drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
@@ -21,7 +19,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 //=================================Variables====================================
-  bool _customTileExpanded = false;
   StreamSubscription? connection;
   bool isoffline = false;
   final AdWidget adWidget = AdWidget(ad: AdBannerHome.myBanner);
@@ -75,90 +72,7 @@ class _HomePageState extends State<HomePage> {
               child: Text('Not connected to any network'),
             ),
       endDrawer: isoffline == false
-          ? Drawer(
-              backgroundColor: Colors.teal[300],
-              width: 200.0,
-              child: Directionality(
-                  textDirection: TextDirection.rtl,
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: 200.0,
-                        ),
-                        Level('الفرقة الأولى', 'Time1Years', 'BooksA1',
-                            'Level1S1', 'Level1S2'),
-                        Level('الفرقة الثانية', 'Time2Years', 'BooksA2',
-                            'Level2S1', 'Level2S2'),
-                        Level('الفرقة الثالثة', 'Time3Years', 'BooksA3',
-                            'Level3S1', 'Level3S2'),
-                        Level('الفرقة الرابعة', 'Time4Years', 'BooksA4',
-                            'Level4S1', 'Level4S2'),
-                        SizedBox(
-                          height: 25.0,
-                        ),
-                        MaterialButton(
-                          onPressed: () {
-                            launchUrl(Uri.parse(
-                                'https://www.paypal.com/paypalme/FouadE0F'));
-                          },
-                          minWidth: 180.0,
-                          child: Text(
-                            'ادعمنا',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.lightGreenAccent),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        MaterialButton(
-                          onPressed: () {
-                            AboutMe(
-                                    applicationName: 'كتاب الطالب',
-                                    version: '0.0.1',
-                                    logo: Image.asset(
-                                      "assets/images/logo.png",
-                                      width: 100.0,
-                                      height: 100.0,
-                                    ),
-                                    description:
-                                        'تطبيق يحتوي على كل ما يحتاجه الطالب في جامعة صفوة من كتب لتعلم')
-                                .showCustomAbout(context);
-                          },
-                          minWidth: 180.0,
-                          child: Text(
-                            'حول التطبيق',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.lightGreenAccent),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15.0,
-                        ),
-                        MaterialButton(
-                          onPressed: () {
-                            SystemNavigator.pop();
-                          },
-                          minWidth: 180.0,
-                          child: Text(
-                            'الخروج',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.lightGreenAccent),
-                          ),
-                        ),
-                      ],
-                    ),
-                  )))
+          ? const AppDrawer()
           : SizedBox(
               width: 200.0,
               child: HorsConnexion(),
@@ -167,12 +81,30 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.teal[200],
         elevation: 10.0,
         centerTitle: true,
-        title: Text(
-          'كلية العلوم الشرعية والعربية',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.indigo),
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text(
+              'كلية العلوم الشرعية والعربية',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo,
+              ),
+              textDirection: TextDirection.rtl,
+            ),
+            SizedBox(height: 4.0),
+            Text(
+              'الموارد التعليمية',
+              style: TextStyle(
+                fontSize: 12.0,
+                fontWeight: FontWeight.normal,
+                color: Colors.indigo[300],
+              ),
+              textDirection: TextDirection.rtl,
+            ),
+          ],
         ),
       ),
       body: SingleChildScrollView(
@@ -232,90 +164,17 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.green),
               textAlign: TextAlign.center,
             ),
+            SizedBox(
+              height: 15.0,
+            ),
             Icon(
               Icons.back_hand_outlined, //
               color: Colors.green,
+              size: 50.0,
             ),
           ],
         ),
       ),
-    );
-  }
-
-  Widget Level(String level, String Emploi2Temp, String Livres,
-      String semestre1, String semestre2) {
-    return ExpansionTile(
-      title: Text(
-        level,
-        style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.lightGreenAccent),
-      ),
-      trailing: Icon(
-        _customTileExpanded
-            ? Icons.arrow_drop_down_circle
-            : Icons.arrow_drop_down,
-      ),
-      children: [
-        MaterialButton(
-          onPressed: () {
-            Navigator.pushNamed(context, Emploi2Temp);
-          },
-          minWidth: 230.0,
-          child: Text(
-            'استعمال الزمن للحصص',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: Colors.indigo),
-          ),
-        ),
-        MaterialButton(
-          onPressed: () {
-            Navigator.pushNamed(context, Livres);
-          },
-          minWidth: 230.0,
-          child: Text(
-            'الكتب المرجعية',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: Colors.indigo),
-          ),
-        ),
-        Padding(padding: EdgeInsets.only(top: 5.0)),
-        MaterialButton(
-          onPressed: () {
-            Navigator.pushNamed(context, semestre1);
-          },
-          minWidth: 230.0,
-          child: Text(
-            'تفريغات الفصل الأول',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: Colors.indigo),
-          ),
-        ),
-        Padding(padding: EdgeInsets.only(top: 5.0)),
-        MaterialButton(
-          onPressed: () {
-            Navigator.pushNamed(context, semestre2);
-          },
-          minWidth: 230.0,
-          child: Text(
-            'تفريغات الفصل الثاني',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: Colors.indigo),
-          ),
-        ),
-      ],
-      onExpansionChanged: (bool expanded) {
-        setState(() => _customTileExpanded = expanded);
-      },
     );
   }
 }

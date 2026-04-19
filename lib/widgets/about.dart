@@ -11,18 +11,33 @@ class AboutMe {
   final String emailCompany = "EAF.microservice@gmail.com";
   final String phoneCompany = "+212 645 994 904";
   final String version;
-  final String? legalese;
+  final Widget? legalese = Text.rich(
+    TextSpan(
+      children: [
+        WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child:
+              Image.asset("assets/eaf/logo_light-.png", width: 24, height: 24),
+        ),
+        TextSpan(
+          text:
+              " © ${DateTime.now().year}. All rights reserved. | EAF microservice",
+          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
+        ),
+      ],
+    ),
+    textAlign: TextAlign.center,
+  );
   final String description;
   final List<Widget>? additionalContent;
   final Widget? logo;
   final Color? backgroundColor;
   final Color? textColor;
 
-  const AboutMe({
+  AboutMe({
     required this.applicationName,
     required this.version,
     required this.description,
-    this.legalese,
     this.additionalContent,
     this.logo,
     this.backgroundColor,
@@ -89,12 +104,11 @@ class AboutMe {
                   ),
                   if (legalese != null) ...[
                     const SizedBox(height: 8),
-                    Text(
-                      legalese!,
-                      style: Theme.of(
-                        context,
-                      ).textTheme.bodySmall?.copyWith(color: textColor),
-                      textAlign: TextAlign.center,
+                    DefaultTextStyle(
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                            color: textColor,
+                          ),
+                      child: legalese!,
                     ),
                   ],
                   if (additionalContent != null) ...[

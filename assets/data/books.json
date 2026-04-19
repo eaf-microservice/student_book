@@ -1,0 +1,604 @@
+{
+  "courses": [
+    {
+      "level": 1,
+      "levelNameAr": "الفرقة الأولى",
+      "semesters": [
+        {
+          "number": 1,
+          "title": "الفرقة الأولى - الفصل الأول",
+          "subjects": [
+            {
+              "name": "العقيدة",
+              "driveId": "13uU089pc9m_ivkwdrHIRvtia1i6S73Zj"
+            },
+            {
+              "name": "التجويد",
+              "driveId": "1WWlgSMwGo2M5yn_fy8v4LAKtrmFPVEUI"
+            },
+            {
+              "name": "الحديث",
+              "driveId": "1oBGbBRPwoEYcvGLZrmlyioVvKT_4U7yb"
+            },
+            {
+              "name": "النحو",
+              "driveId": "1_xRkzTgE5-V8CNJewqqasPwDX_pAdvUT"
+            },
+            {
+              "name": "الفقه",
+              "driveId": "1WUsv7c5eo8lGiUTeEPQP1-eaRow8ux55"
+            },
+            {
+              "name": "أصول الفقه",
+              "driveId": "1bQlxYN6kcIU24eOFr_Tl9F9FvpOIMhcd"
+            },
+            {
+              "name": "الآداب الإسلامية",
+              "driveId": "1B_gXEEEGO5tpCjiy4y1x44r_mwUdNG9X"
+            },
+            {
+              "name": "مصطلح الحديث",
+              "driveId": "1wHjRuvkzrBa8PizmIyxDpIBdF6Fg1it4"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الفرقة الأولى - الفصل الثاني",
+          "subjects": [
+            {
+              "name": "العقيدة",
+              "driveId": "1uy8vxMo6UoXSXZzqZTikEgFYptCoGia8"
+            },
+            {
+              "name": "التجويد",
+              "driveId": "1lZI0KCfqS6uiqytdVAOqJWyRxx_toMCv"
+            },
+            {
+              "name": "الحديث",
+              "driveId": "1qbuJA0xmnHkxtz5JP2Zh7rrcdYZZZ4RQ"
+            },
+            {
+              "name": "النحو",
+              "driveId": "1l4X-903MILjK4yylCPTibwm5Aab0aXH-"
+            },
+            {
+              "name": "الفقه",
+              "driveId": "1D6ecg-za-AX4XvIb7SJ8SjD_DAgngpSB"
+            },
+            {
+              "name": "أصول الفقه",
+              "driveId": "1andwAd9g4f4ZnGf4t8sHdx664qb9QLg_"
+            },
+            {
+              "name": "الآداب الإسلامية",
+              "driveId": "1IOgZDbr27TWVZJ8pt9QfZX7m-g-4o1xh"
+            }
+          ]
+        }
+      ],
+      "referenceBooks": [
+        {
+          "name": "العقيدة \n كتاب إتحاف ذوي العقول الرشيدة بشرح البداية في العقيدة",
+          "driveId": "1pFW6zrUy4IblV1PaH548FzQkuwJiXgtw",
+          "coverImage": "assets/couvreBooks/Annee1/akida.png"
+        },
+        {
+          "name": "التجويد \n كتاب البداية في علم التجويد",
+          "driveId": "1d_bnsJCZIst7x8lqxS-L6HUZwM-I2N6U",
+          "coverImage": "assets/couvreBooks/Annee1/tajwid.png"
+        },
+        {
+          "name": "الحديث \n كتاب عمدة الأحكام من كلام خير الأنام",
+          "driveId": "1X9b0iMudnwrcNWF6qwNYJnjgUNp3mBTM",
+          "coverImage": "assets/couvreBooks/Annee1/hadith.png"
+        },
+        {
+          "name": "اللغة العربية \n كتاب المختصر في النحو",
+          "driveId": "1z4QKW7FH1Rua5a2a0XBSjWzwo5lVIOp4",
+          "coverImage": "assets/couvreBooks/Annee1/arabic.png"
+        },
+        {
+          "name": "الفقه \n كتاب التوثيق لبداية المتفقه",
+          "driveId": "1PRJElbM5j4tJgiRPWbHJwbWLDLty5OnU",
+          "coverImage": "assets/couvreBooks/Annee1/fiqh.png"
+        },
+        {
+          "name": "أصول الفقه\n كتاب غاية المأمول في شرح البداية في الأصول",
+          "driveId": "1Ya8dGLkyLHHeY2cLb3ipi1ajLE5195vd",
+          "coverImage": "assets/couvreBooks/Annee1/osol_fiqh.png"
+        },
+        {
+          "name": "الآداب الإسلامية \n كتاب اللآلئ البهية شرح صحيح الآداب الإسلامية",
+          "driveId": "1syOLFnAOw8xeQqAeFQ_cBPJkUf28nxs0",
+          "coverImage": "assets/couvreBooks/Annee1/tarbiya.png"
+        },
+        {
+          "name": "مصطلح الحديث \n كتاب متن البداية في مصطلح الحديث",
+          "driveId": "1tb1DGFD8yL7qeRy9JmLWHwYg6YBtK208",
+          "coverImage": "assets/couvreBooks/Annee1/mostala7_7adit.png"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "levelNameAr": "الفرقة الثانية",
+      "semesters": [
+        {
+          "number": 1,
+          "title": "الفرقة الثانية - الفصل الأول",
+          "subjects": [
+            {
+              "name": "التربية والسلوك",
+              "driveId": "120xulxPDtLo_hGj8-jUBgnLQJudllqLa"
+            },
+            {
+              "name": "العقيدة",
+              "driveId": "19JusI_a4jCSUcY6Lx9i4tp2411zjvFmc"
+            },
+            {
+              "name": "تاريخ التشريع",
+              "driveId": "1nWDjt3J6I5QQu7-r-eEt2FgWZeTG7dbl"
+            },
+            {
+              "name": " الفقه الحنفي",
+              "driveId": "1vlymL7h2mUnAiIcU8mLtMuJn7EqAKQBv"
+            },
+            {
+              "name": "الفقه المالكي",
+              "driveId": "1iR_aomS7u3GlCCk5pv8M_Tcnnrm_L5Oi"
+            },
+            {
+              "name": "الفقه الشافعي",
+              "driveId": "1Bw8dhvHsUAAVHeSmxqFpyohFb1azBDPY"
+            },
+            {
+              "name": "الفقه الحنبلي",
+              "driveId": "17kKNca3AFuBEPj9KeJEqGXqInSFsiRlj"
+            },
+            {
+              "name": "التفسير",
+              "driveId": "1khJX2R4_EZW_sGXtH2eTrJXbc9id-5km"
+            },
+            {
+              "name": "البلاغة",
+              "driveId": "1EpsctC8MJU1bnIh5W0imoDakOxJdGEbc"
+            },
+            {
+              "name": "علوم القرآن",
+              "driveId": "1B4snPk958Nw536ZuBjAEXzaQVZzxiSxl"
+            },
+            {
+              "name": "السيرة النبوية",
+              "driveId": "1DKBqKbC8g2IzjifQauqWJ5U2KM3Aokel"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الفرقة الثانية - الفصل الثاني",
+          "subjects": [
+            {
+              "name": "التربية والسلوك",
+              "driveId": "196UULVT99M4pug6gmBQd6V03APhf0zP6"
+            },
+            {
+              "name": "العقيدة",
+              "driveId": "1y-W3Lx8jXD_i48LeQ4qwJXZa7ZqGgn3K"
+            },
+            {
+              "name": "المواريث",
+              "driveId": "1SgvJbxMjJn3mf0a2PyYnddSIs8b-FojK"
+            },
+            {
+              "name": "الفقه الحنفي",
+              "driveId": "16m9ra-iNECHqV0v4HkI3K28hWs5I7z7f"
+            },
+            {
+              "name": "الفقه المالكي",
+              "driveId": "1sla4F20j2D7f51FBOjBWYxzFxlwFDO5Q"
+            },
+            {
+              "name": "الفقه الشافعي",
+              "driveId": "1FIAMSG9wSWpoitFFxXboUmubjDPKk8_E"
+            },
+            {
+              "name": "الفقه الحنبلي",
+              "driveId": "18khOZ64o9ei9yRpsRIJUxajY2jjWPWsN"
+            },
+            {
+              "name": "التفسير",
+              "driveId": "1KKvNI5SUjzUOldMDfUIp-0UgjKnfmmsx"
+            },
+            {
+              "name": "الصرف",
+              "driveId": "1N8eNn5cztXJE3l5KoUbMCUpfvtpzYmPR"
+            },
+            {
+              "name": "علوم القرآن",
+              "driveId": "1RU22ELiB5XQE9wr3NLlYcoFsbHd0LeDB"
+            },
+            {
+              "name": "السيرة النبوية",
+              "driveId": "1ZCeLHY8-oj5tvpyHllghzMOj-FS2JX_4"
+            }
+          ]
+        }
+      ],
+      "referenceBooks": [
+        {
+          "name": "تاريخ التشريع \n كتاب المذهب عند الحنفية والمالكية والشافعية والحنابلة",
+          "driveId": "1kLB6IBCmDnJ069ooQ-XsmNUosQ4s9VcL",
+          "coverImage": "assets/couvreBooks/Annee2/tarikh_tachri3.png"
+        },
+        {
+          "name": "المواريث \n كتاب هداية الوريث شرح بداية المواريث",
+          "driveId": "1Qt4kFDXul94KiGvdtYPbvTKL3lPQiL2g",
+          "coverImage": "assets/couvreBooks/Annee2/bidaya_mawarit.png"
+        },
+        {
+          "name": "اللغة العربية الفصل الأول \n كتاب البناية في شرح البداية في علوم البلاغة",
+          "driveId": "19F6tcnKigTinxiFhHXLOK9BMSCVAHJva",
+          "coverImage": "assets/couvreBooks/Annee2/arabic_balagha.png"
+        },
+        {
+          "name": "اللغة العربية الفصل الثاني \n كتاب شرح البداية في الصرف",
+          "driveId": "1U-HBkF0g9E2HSp2XThbu_lA27Zgq93g0",
+          "coverImage": "assets/couvreBooks/Annee2/arabic_sarf.png"
+        },
+        {
+          "name": "التربية والسلوك \n كتاب البداية في علم الرقائق",
+          "driveId": "1bSqoG9Egc_EtPHHQleqGJupGujfv002f",
+          "coverImage": "assets/couvreBooks/Annee2/tarbiya_w_solok.png"
+        },
+        {
+          "name": "العقيدة \n كتاب حصول المنة بشرح أصول السنة للإمام أحمد",
+          "driveId": "1yNeQoFOspB2AY__wCvqgBeyjcoC_7DxE",
+          "coverImage": "assets/couvreBooks/Annee2/akida.png"
+        },
+        {
+          "name": "التفسير \n كتاب تفسير القرآن العظيم للحافظ ابن كثير",
+          "driveId": "1yNeQoFOspB2AY__wCvqgBeyjcoC_7DxE",
+          "coverImage": "assets/couvreBooks/Annee2/tafsir.png"
+        },
+        {
+          "name": "علوم القرآن \n كتاب هداية المنان شرح البداية في علوم القرآن",
+          "driveId": "1Ye5VR-ywZfxRhe438blizO2F0bTbbKYD",
+          "coverImage": "assets/couvreBooks/Annee2/quran_science.png"
+        },
+        {
+          "name": "السيرة النبوية \n كتاب الخلاصة البهية في ترتيب أحداث السيرة النبوية",
+          "driveId": "1eAVrjxZVo7qYwzQVh0l5amvAUZtNLsy0",
+          "coverImage": "assets/couvreBooks/Annee2/sira_nabawiya.png"
+        },
+        {
+          "name": "الفقه المالكي \n كتاب الكافي في فقه أهل المدينة المالكي",
+          "driveId": "1-1HXlfAdaeWeDuaYBUcDfr3-N6FbJbms",
+          "coverImage": "assets/couvreBooks/Annee2/fiqh_maliki.png"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "levelNameAr": "الفرقة الثالثة",
+      "semesters": [
+        {
+          "number": 1,
+          "title": "الفرقة الثالثة - الفصل الأول",
+          "subjects": [
+            {
+              "name": "التربية والسلوك",
+              "driveId": "1bj5Kc4YxBAPmgzGOl6SxshCe_kL53wqy"
+            },
+            {
+              "name": "العقيدة",
+              "driveId": "1zKOzIpVIt6_tEtr3RxAxzOJC7W86dSKO"
+            },
+            {
+              "name": "الفقه العام",
+              "driveId": "17I9rMau5x9mJ9Ao-CiGNi-c2A9vapFjs"
+            },
+            {
+              "name": "الفقه الحنبلي",
+              "driveId": "17jMONWtaN1rx6KdrepTp4XmkbMw1eQqv"
+            },
+            {
+              "name": "الفقه الحنفي",
+              "driveId": "1hq63ppA6D7lWVfJzqZn7rJWqKi32YZHj"
+            },
+            {
+              "name": "الفقه الشافعي",
+              "driveId": "1xSY1LZht66mPhJqAhITudNhfYXsJzUqS"
+            },
+            {
+              "name": "الفقه المالكي",
+              "driveId": "1GQJyi6IOM_Jfzkv8H66774f5WQOjY3iJ"
+            },
+            {
+              "name": "مصطلح الحديث",
+              "driveId": "1ejmmDPQsmQ0CPAPJS7TW1xZftmHNLpII"
+            },
+            {
+              "name": "القواعد الفقهية",
+              "driveId": "1AIpbbmYAyc20sGBvsv5zJ3ywmljLyyvy"
+            },
+            {
+              "name": "التفسير",
+              "driveId": "1Z0ZfCqd-yZySMTOi3oRsIdGwssrJhQ8-"
+            },
+            {
+              "name": "التجويد",
+              "driveId": "1QW5Zn3io-_4cMNSTHt8RyRm8RjPY-BZO"
+            },
+            {
+              "name": "أصول الفقه",
+              "driveId": "1nTF5QDNe50XKnb62Tk19fv7M_YCuB8me"
+            },
+            {
+              "name": "الفرق والمذاهب",
+              "driveId": "1juv_OsEkzmsECtFl9M9893QUD2MSXOKF"
+            },
+            {
+              "name": "التاريخ الخلافة",
+              "driveId": "1YBNkrdOB2Jjq6wFtKIgfqbr8xdRA1Tt5"
+            },
+            {
+              "name": "الإعراب التطبيقي",
+              "driveId": "1MceOwA_BZLEk2viUhl16ggFsOw51htc3"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الفرقة الثالثة - الفصل الثاني",
+          "subjects": [
+            {
+              "name": "التربية والسلوك",
+              "driveId": "1j6S14XtK5yvaOOjncVkpuV9YFWuolori"
+            },
+            {
+              "name": "العقيدة",
+              "driveId": "1P6tCpyGUshLQU-HMC-J7jd2e_dgLUynQ"
+            },
+            {
+              "name": "الفقه العام",
+              "driveId": "19u1Vy-L1Na20Pl_ZTgAsK8UKCoyRWX80"
+            },
+            {
+              "name": "الفقه الحنفي",
+              "driveId": "1RhhvXpadfs7XkaLsYad-81quWDMu4EhN"
+            },
+            {
+              "name": "الفقه الحنبلي",
+              "driveId": "1D6Gd-UflllcFFJVSSEwO5mWDibTUUboL"
+            },
+            {
+              "name": "الفقه المالكي",
+              "driveId": "1XmsPWrlHfdRCXl-87W5BS7Ez5SpP9o9b"
+            },
+            {
+              "name": "الفقه الشافعي",
+              "driveId": "1QolXBE3pG9d6tHnuf2f0hyKvr_gBeD8E"
+            },
+            {
+              "name": "مصطلح الحديث",
+              "driveId": "1ra59sdmKQDCZFqTuAst_dt4X9WI0kB-1"
+            },
+            {
+              "name": "الفرق والمذاهب",
+              "driveId": "1wosyCO67WKr-mAgEBmcvIMY_nTu4f4dp"
+            },
+            {
+              "name": "تاريخ الخلافة الراشدة",
+              "driveId": "1kkdTTthfGGQuJBnqL76ewZLiOf1-4jQx"
+            },
+            {
+              "name": "الإعراب التطبيقي",
+              "driveId": "189NfrEbG4Km6motflXGwHGMSvUgVnrYy"
+            },
+            {
+              "name": "ضوابط الكتابة الصحيحة",
+              "driveId": "1I55bI00ANDoGLKWRIBIAVZx4y9sTwrc_"
+            }
+          ]
+        }
+      ],
+      "referenceBooks": [
+        {
+          "name": "التربية والسلوك \n كتاب البداية في علم الرقائق",
+          "driveId": "1bSqoG9Egc_EtPHHQleqGJupGujfv002f",
+          "coverImage": "assets/couvreBooks/Annee3/tarbiya_w_solok.png"
+        },
+        {
+          "name": "الفقه الحنبلي \n كتاب فتح وهاب المآرب على دليل الطالب لنيل المطالب",
+          "driveId": "1-WtKey9nCMejfjyJ4EOFn4zQNCn9MZHM",
+          "coverImage": "assets/couvreBooks/Annee3/fiqh_hanbali.png"
+        },
+        {
+          "name": "الفقه المالكي \n كتاب الكافي في فقه أهل المدينة المالكي",
+          "driveId": "1-1HXlfAdaeWeDuaYBUcDfr3-N6FbJbms",
+          "coverImage": "assets/couvreBooks/Annee3/fiqh_maliki.png"
+        },
+        {
+          "name": "الفقه الشافعي \n كتاب الإقناع في حل ألفاظ أبي شجاع",
+          "driveId": "1iko2MaH2TOXAtv2jX1dAohX2B84EnBV4",
+          "coverImage": "assets/couvreBooks/Annee3/fiqh_chafi3i.png"
+        },
+        {
+          "name": "الفقه الحنفي \n كتاب اللباب في شرح الكتاب",
+          "driveId": "1CpR7PBZF6rLGEaj2J-wEZmvUTIp7hqz1",
+          "coverImage": "assets/couvreBooks/Annee3/fiqh_hanafi.png"
+        },
+        {
+          "name": "العقيدة 1 \n كتاب الجامع لمسائل العقيدة الطحاوية",
+          "driveId": "1zlcTNaRBIhdj5jZmbWv1NiZc_YLpwnhi",
+          "coverImage": "assets/couvreBooks/Annee3/akida_ta7awiya.png"
+        },
+        {
+          "name": "العقيدة 2 \n كتاب الجامع لمسائل العقيدة الواسطية",
+          "driveId": "1A6mJOTKp6A8qMTv9vPMNb-JpzM-ikvQS",
+          "coverImage": "assets/couvreBooks/Annee3/akida_wastiya.png"
+        },
+        {
+          "name": "فقه عام \n كتاب الإبداع في شرح الإجماع",
+          "driveId": "1fjgfKo671xrURVfnD8w00CYkIy2m6qoJ",
+          "coverImage": "assets/couvreBooks/Annee3/char7_ijma3.png"
+        },
+        {
+          "name": "مصطلح الحديث \n كتاب نزهة النظر في توضيح نخبة الفكر",
+          "driveId": "1bJltTVdRalOazdG2fpiWYtdema09ymyR",
+          "coverImage": "assets/couvreBooks/Annee3/nozhat_nadar.png"
+        },
+        {
+          "name": "قواعد فقهية \n كتاب القواعد الفقهية وتطبيقاتها في المذاهب الأربعة",
+          "driveId": "1IngOivlMO1k6P2w8o8HLw2jDhJ1nmVhX",
+          "coverImage": "assets/couvreBooks/Annee3/qawa3id_fiqhiya.png"
+        },
+        {
+          "name": "التفسير \n كتاب نيل المرام من تفسير آيات الأحكام",
+          "driveId": "1fufXcH1K833JV1Mb4WMiQ9COiLMwmwhq",
+          "coverImage": "assets/couvreBooks/Annee3/tafsir_ayat.png"
+        },
+        {
+          "name": "التجويد \n كتاب السلسبيل الشافي في تجويد القرآن",
+          "driveId": "1MoJ91cp7VKEAg9EdTWyPswrxfjMVSijM",
+          "coverImage": "assets/couvreBooks/Annee3/salsabil_chafi.png"
+        },
+        {
+          "name": "أصول فقه \n كتاب تيسير الوصول إلى قواعد الأصول ومعاقد الفصول",
+          "driveId": "1fX67YgLuwfQmEBegMEsTU5lvDPXD_mli",
+          "coverImage": "assets/couvreBooks/Annee3/taysir_wosol_osol.png"
+        },
+        {
+          "name": "فرق و مذاهب \n كتاب الموسوعة الميسرة في الأديان والمذاهب والأحزاب المعاصرة",
+          "driveId": "1ERP4nfTKqhQnEnqgJaR6hgGVwcblRpOJ",
+          "coverImage": "assets/couvreBooks/Annee3/adyan_madahib.png"
+        },
+        {
+          "name": "اللغة العربية 1 \n كتاب الإعراب التطبيقي لجزء عم",
+          "driveId": "1gu1YHy9mOYawTNdGv2V2kmN31WnuIeQS",
+          "coverImage": "assets/couvreBooks/Annee3/i3rab_3ama.png"
+        },
+        {
+          "name": " اللغة العربية 2 \n كتاب ضوابط الكتابة الصحيحة",
+          "driveId": "1xNpfXHo7hGa5ZZLCbmprTLHP5dQAyQPj",
+          "coverImage": "assets/couvreBooks/Annee3/dawabit_kitaba.png"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "levelNameAr": "الفرقة الرابعة",
+      "semesters": [
+        {
+          "number": 1,
+          "title": "الفرقة الرابعة - الفصل الأول",
+          "subjects": [
+            {
+              "name": "تاريخ الدولة العباسية",
+              "driveId": "1qMCdjNIvJIQue68dkIRjvc4Wzlh66okI"
+            },
+            {
+              "name": "التربية والسلوك",
+              "driveId": "1wLa9RFNiCJh4wb-Dfgqkq5qSkz_nStrp"
+            },
+            {
+              "name": "الحديث الشريف 1",
+              "driveId": "12mW461wucLqYy4e3lsAqda0wDM2DFlFY"
+            },
+            {
+              "name": "الحديث الشريف 2",
+              "driveId": "1OjKZwYZrzUyRuNNxDAwUrzRx99Q6pUos"
+            },
+            {
+              "name": "العقيدة والتوحيد",
+              "driveId": "115XD4kv0OO9Ybrrawm3FMoqGmBo2JAY8"
+            },
+            {
+              "name": "الفقـة قضايا معاصرة 1",
+              "driveId": "1E-Fe7MbPbW_GDyx034G06O519RN-Buqv"
+            },
+            {
+              "name": "الفقـة قضايا معاصرة 2",
+              "driveId": "1MzWq31Z3ei-t4gP4BUeNZRe99U2qPA3g"
+            },
+            {
+              "name": "الفكر المعاصر",
+              "driveId": "1qtL_vQoXMa9gfcgowBdHOzIF_CcwuzEb"
+            },
+            {
+              "name": "المعاجم العربية",
+              "driveId": "1N0bDBPS8OaxGQ_jYz-c78KlINtPwixV_"
+            },
+            {
+              "name": "تاريخ الأدب العربي",
+              "driveId": "1vGknuoZ8Gb956Fh6UagG5kQCov4yMPG0"
+            },
+            {
+              "name": "مناهج البحث العلمي",
+              "driveId": "1DzFIB_fL7hOMgCW7G_aaUmxsF3cWIkuc"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "الفرقة الرابعة - الفصل الثاني",
+          "subjects": [
+            {
+              "name": "تاريخ الدولة العباسية",
+              "driveId": "17k-tC0HQcW8KqymbI26ZDvz9KBg7__9j"
+            },
+            {
+              "name": "التربية والسلوك",
+              "driveId": "1C4sGKrvrdPm42wv89_Zt9yWeEux2VqWZ"
+            },
+            {
+              "name": "العقيدة والتوحيد",
+              "driveId": "1iPZUQxDjCkI6YpqyfeMok0ZIvjF_xYUc"
+            },
+            {
+              "name": "الفقـة قضايا معاصرة 1",
+              "driveId": "1FKwx98Su7vV_SiMpTsNIpDq6-Ti2gVeY"
+            },
+            {
+              "name": "الفقـة قضايا معاصرة 2",
+              "driveId": "1FsqrJoOVur2iQ1JrYbPUJ8giOJv-bP76"
+            }
+          ]
+        }
+      ],
+      "referenceBooks": [
+        {
+          "name": "مناهج البحث \nمهارات البحث العلمي",
+          "driveId": "1coHeLKwOUVaUwt4sR-dRmy0LbpTSj87t",
+          "coverImage": "assets/couvreBooks/Annee4/ba7t_3ilmi.png"
+        },
+        {
+          "name": "منهجية إثبات صحة الإسلام",
+          "driveId": "1uE_OZm07ZkqjbtXcTmtHVw3_V-P7p2Uj",
+          "coverImage": "assets/couvreBooks/Annee4/manhajiya.png"
+        },
+        {
+          "name": "الفقه\nقضايا فقهية معاصرة",
+          "driveId": "1hs2kNlj0kVMJ_iQqVm47FqlynIOn0Mw5",
+          "coverImage": "assets/couvreBooks/Annee4/qadaya_mo3asira.png"
+        },
+        {
+          "name": "العقيدة\nفتح الرب الحميد في شرح كتاب التوحيد",
+          "driveId": "1jk45nTA4SkFakGjKxgsRqILM64SPruIa",
+          "coverImage": "assets/couvreBooks/Annee4/tawhid.png"
+        },
+        {
+          "name": "تاريخ\nتاريخ الدولة العباسية",
+          "driveId": "1aoapUSHe5h46OHcoNVzCXTjwYgBlNGkT",
+          "coverImage": "assets/couvreBooks/Annee4/tarikh.png"
+        },
+        {
+          "name": "الحديث\nالمحرر في الحديث",
+          "driveId": "1KkSbAJGF7hWufEnz0EBvV9WgKl_fT7OZ",
+          "coverImage": "assets/couvreBooks/Annee4/hadith.png"
+        }
+      ]
+    }
+  ]
+}
